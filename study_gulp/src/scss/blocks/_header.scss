@@ -1,0 +1,31 @@
+.header {
+  background: green;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  padding: 100px;
+
+  .text {
+    font-family: Gotham Black;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px; /* 36px */
+    letter-spacing: -1.8px;
+    background: var(
+      --Red_Orange,
+      linear-gradient(90deg, #fa709a 0%, #fee140 100%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 50px;
+    font-size: 12px;
+    background: black;
+  }
+}
