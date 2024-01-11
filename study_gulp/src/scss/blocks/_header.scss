@@ -1,31 +1,36 @@
-.header {
-  background: green;
-  color: white;
-  text-align: center;
-  font-size: 28px;
-  padding: 100px;
-
-  .text {
-    font-family: Gotham Black;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 36px; /* 36px */
-    letter-spacing: -1.8px;
-    background: var(
-      --Red_Orange,
-      linear-gradient(90deg, #fa709a 0%, #fee140 100%)
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 120px;
+  .header_logo {
+    .header_img {
+    }
   }
-}
+  .menu_list {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    .menu_item {
+      .menu_link {
+        font-family: Gotham;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; /* 20px */
+        letter-spacing: -1px;
+      }
+    }
+  }
 
-@media (max-width: 1200px) {
-  .header {
-    padding: 50px;
-    font-size: 12px;
-    background: black;
+  .button {
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 4px;
+    background: var(--Main-Colors-Purple-1, #e9dffc);
   }
 }

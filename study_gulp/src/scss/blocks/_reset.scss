@@ -36,7 +36,8 @@ body {
 body {
   line-height: 1;
   font-family: Montserrat;
-  // color: ;
+  color: #000;
+  // background-color: #e9dffc;
 }
 
 .wrapper {
@@ -47,9 +48,8 @@ body {
 }
 
 .container {
-  max-width: 1080px;
+  max-width: 1170px;
   margin: 0 auto;
-  justify-content: center;
 }
 
 @media (max-width: 1199.98px) {
