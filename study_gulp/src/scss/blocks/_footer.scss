@@ -1,0 +1,27 @@
+.footer {
+  min-height: 130px;
+
+  background: #000;
+
+  .footer_container {
+    // padding: 280px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 130px;
+    cursor: pointer;
+  }
+
+  .footer_logo {
+    transition: ease 0.3s;
+  }
+
+  .footer_logo:hover {
+    transform: translateY(-10px);
+  }
+
+  .logo {
+    display: flex;
+    gap: 45px;
+  }
+}
