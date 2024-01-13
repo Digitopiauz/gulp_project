@@ -1,0 +1,51 @@
+.about {
+  padding: 60px 0 120px 0;
+  .about_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-column-gap: 100px;
+    grid-row-gap: 100px;
+    .about_img {
+      .img {
+      }
+    }
+
+    .about_text {
+      .about_title {
+        color: #292929;
+
+        font-family: Anton;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 64px;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+      }
+      .line {
+        width: 66px;
+        height: 21px;
+        background: #a87ff3;
+      }
+      .about_sub_text {
+        padding-top: 40px;
+        .text_first {
+          padding-bottom: 10px;
+        }
+        .text {
+          color: #292929;
+
+          /* P3/Gotham/Book/Active/left */
+          font-family: Gotham;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 16px; /*  */
+          letter-spacing: -0.8px;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}
