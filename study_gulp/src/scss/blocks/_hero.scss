@@ -1,6 +1,7 @@
 .hero_container {
   display: flex;
   justify-content: space-between;
+  text-align: center;
 
   .hero_img {
   }
@@ -8,16 +9,17 @@
   .hero_title_ctn {
     text-align: center;
     .hero_title {
+      padding-top: 239px;
       text-align: center;
       color: #925ff0;
       font-family: Anton;
-      font-size: 100px;
+      font-size: 130px;
       font-style: normal;
       font-weight: 800;
       line-height: 100%; /* 200px */
     }
     .arrow {
-      padding: 400px 0 0 0;
+      padding: 170px 0 0 0;
       transition: ease 0.3s;
     }
 
