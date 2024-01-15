@@ -31,17 +31,16 @@
       .about_sub_text {
         padding-top: 40px;
         .text_first {
-          padding-bottom: 10px;
+          // padding-bottom: 10px;
         }
         .text {
           color: #292929;
 
-          /* P3/Gotham/Book/Active/left */
           font-family: Gotham;
           font-size: 16px;
           font-style: normal;
           font-weight: 400;
-          line-height: 16px; /*  */
+          line-height: 16px;
           letter-spacing: -0.8px;
           text-transform: capitalize;
         }
