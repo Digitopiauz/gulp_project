@@ -5,7 +5,7 @@ const server = require("gulp-server-livereload")
 const clean = require("gulp-clean")
 const fs = require("fs")
 const sourseMaps = require("gulp-sourcemaps")
-// const groupMedia = require("gulp-group-css-media-queries")
+const groupMedia = require("gulp-group-css-media-queries")
 const plumber = require("gulp-plumber")
 const notify = require("gulp-notify")
 const webpack = require("webpack-stream")
@@ -42,25 +42,23 @@ gulp.task("html", () => {
 })
 
 gulp.task("sass", () => {
-  return (
-    gulp
-      .src("./src/scss/*.scss")
-      .pipe(plumber(pilumberNotify("SCSS")))
-      .pipe(sourseMaps.init())
-      .pipe(sass())
-      // .pipe(groupMedia())
-      .pipe(sourseMaps.write())
-      .pipe(gulp.dest("./dist/css/"))
-  )
+  return gulp
+    .src("./src/scss/*.scss")
+    .pipe(plumber(pilumberNotify("SCSS")))
+    .pipe(sourseMaps.init())
+    .pipe(sass())
+    .pipe(groupMedia())
+    .pipe(sourseMaps.write())
+    .pipe(gulp.dest("./dist/css/"))
 })
 
 gulp.task("images", () => {
   return gulp.src("./src/img/**/*").pipe(gulp.dest("./dist/img/"))
 })
 
-gulp.task("fonts", () => {
-  return gulp.src("./src/fonts/**/*").pipe(gulp.dest("./dist/fonts/"))
-})
+// gulp.task("fonts", () => {
+//   return gulp.src("./src/fonts/**/*").pipe(gulp.dest("./dist/fonts/"))
+// })
 
 gulp.task("files", () => {
   return gulp.src("./src/files/**/*").pipe(gulp.dest("./dist/files/"))
