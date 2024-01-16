@@ -18,7 +18,7 @@
         font-size: 64px;
         font-style: normal;
         font-weight: 800;
-        line-height: 64px;
+        line-height: 100%;
         text-transform: uppercase;
         padding-bottom: 10px;
       }
@@ -31,11 +31,11 @@
       .about_sub_text {
         padding-top: 40px;
         .text_first {
-          // padding-bottom: 10px;
+          padding-bottom: 10px;
         }
         .text {
           color: #292929;
-          font-family: Gotham;
+          font-family: Gothic;
           font-size: 16px;
           font-style: normal;
           font-weight: 400;

@@ -56,9 +56,9 @@ gulp.task("images", () => {
   return gulp.src("./src/img/**/*").pipe(gulp.dest("./dist/img/"))
 })
 
-// gulp.task("fonts", () => {
-//   return gulp.src("./src/fonts/**/*").pipe(gulp.dest("./dist/fonts/"))
-// })
+gulp.task("fonts", () => {
+  return gulp.src("./src/fonts/**/*").pipe(gulp.dest("./dist/fonts/"))
+})
 
 gulp.task("files", () => {
   return gulp.src("./src/files/**/*").pipe(gulp.dest("./dist/files/"))

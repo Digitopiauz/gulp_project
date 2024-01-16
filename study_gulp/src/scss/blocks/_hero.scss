@@ -1,25 +1,28 @@
-.hero_container {
+.hero {
   display: flex;
   justify-content: space-between;
   text-align: center;
 
   .hero_img {
   }
-
-  .hero_title_ctn {
-    text-align: center;
-    .hero_title {
-      padding-top: 239px;
+  .hero_container {
+    .hero_title_ctn {
       text-align: center;
-      color: #925ff0;
-      font-family: Anton;
-      font-size: 130px;
-      font-style: normal;
-      font-weight: 800;
-      line-height: 100%; /* 200px */
-    }
-    .arrow {
-      padding: 170px 0 0 0;
+      .hero_title {
+        padding-top: 239px;
+        text-align: center;
+
+        color: #925ff0;
+        font-family: Anton;
+        font-size: 200px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 200px;
+        opacity: 0.8;
+      }
+      .arrow {
+        padding: 170px 0 0 0;
+      }
     }
   }
 }
