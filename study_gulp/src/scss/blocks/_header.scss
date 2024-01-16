@@ -6,11 +6,6 @@
   cursor: pointer;
   .header_logo {
     .header_img {
-      transition: ease 0.3s;
-    }
-    .header_img:hover {
-      transform: translateY(-10px);
-      text-decoration: underline;
     }
   }
   .menu_list {
@@ -18,7 +13,6 @@
     align-items: center;
     gap: 30px;
     .menu_item {
-      transition: ease 0.3s;
       .menu_link {
         font-family: Gotham;
         font-size: 20px;
@@ -29,8 +23,9 @@
         color: #292929;
       }
     }
-    .menu_item:hover {
-      transform: translateY(-10px);
+    .menu_link:hover {
+      text-decoration: underline;
+      color: #784dc7;
     }
   }
 
@@ -44,10 +39,9 @@
     background: #e9dffc;
     color: #784dc7;
     cursor: pointer;
-    transition: ease 0.3s;
   }
 
   .button:hover {
-    transform: translateY(-10px);
+    background: #000;
   }
 }
