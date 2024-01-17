@@ -1,5 +1,4 @@
 .skills_container {
-  cursor: pointer;
   padding-bottom: 280px;
   .skills_title {
     padding-bottom: 90px;
@@ -37,12 +36,27 @@
       .skills_cart_text {
         color: #fff;
 
-        font-size: 44px;
+        font-family: Anton;
+        font-size: 64px;
         font-style: normal;
         font-weight: 400;
-        line-height: 64px; /* 64px */
+        line-height: 100%; /* 64px */
         text-transform: uppercase;
+        transition: ease 0.3s;
+      }
+
+      .skills_cart_text:hover {
+        color: #464646;
+      }
+      .skills_cart_text:active {
+        color: #757575;
       }
     }
+
+    // .skills_cart:hover {
+    //   .skills_cart_text {
+    //     color: #464646;
+    //   }
+    // }
   }
 }

@@ -7,18 +7,19 @@
     align-items: center;
     min-height: 100px;
     cursor: pointer;
-  }
-
-  .footer_logo {
-    transition: ease 0.3s;
-  }
-
-  .footer_logo:hover {
-    transform: translateY(-10px);
-  }
-
-  .logo {
-    display: flex;
-    gap: 45px;
+    .footer_logo {
+      transition: ease 0.3s;
+    }
+    .footer_logo:hover {
+      transform: translateY(-10px);
+      background: #cbafff;
+    }
+    .footer_logo:active {
+      background: #925ff0;
+    }
+    .logo {
+      display: flex;
+      gap: 45px;
+    }
   }
 }

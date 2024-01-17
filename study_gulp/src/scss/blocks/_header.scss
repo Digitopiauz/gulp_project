@@ -3,7 +3,6 @@
   justify-content: space-between;
   align-items: center;
   min-height: 120px;
-  cursor: pointer;
   .header_logo {
     .header_img {
     }
@@ -14,18 +13,19 @@
     gap: 30px;
     .menu_item {
       .menu_link {
-        font-family: Gothic;
+        font-family: "Gothic";
         font-size: 20px;
         font-style: normal;
         font-weight: 400;
-        line-height: 20px; /* 20px */
+        line-height: 20px;
         letter-spacing: -1px;
         color: #292929;
+        transition: ease 0.3s;
       }
     }
     .menu_link:hover {
-      text-decoration: underline;
-      color: #784dc7;
+      color: #925ff0;
+      cursor: pointer;
     }
   }
 
@@ -37,11 +37,18 @@
     gap: 5px;
     border-radius: 4px;
     background: #e9dffc;
+    transition: ease 0.3s;
     color: #784dc7;
     cursor: pointer;
   }
 
   .button:hover {
-    background: #000;
+    background: #cbafff;
+    color: white;
+  }
+
+  .button:active {
+    background: #925ff0;
+    color: white;
   }
 }
