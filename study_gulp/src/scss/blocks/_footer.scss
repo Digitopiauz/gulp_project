@@ -6,11 +6,12 @@
     justify-content: space-between;
     align-items: center;
     min-height: 100px;
-    cursor: pointer;
+
     .footer_logo {
       transition: ease 0.3s;
     }
     .footer_logo:hover {
+      cursor: pointer;
       transform: translateY(-10px);
     }
 
