@@ -23,6 +23,7 @@
       padding: 50px 50px 50px 50px;
       border-radius: 40px;
       background: #e9dffc;
+      transition: ease 0.3s;
 
       .skills_cart_title {
         color: #464646;
@@ -44,21 +45,19 @@
         font-weight: 400;
         line-height: 100%; /* 64px */
         text-transform: uppercase;
-        transition: ease 0.3s;
-      }
-
-      .skills_cart_text:hover {
-        color: #464646;
-      }
-      .skills_cart_text:active {
-        color: #757575;
+        transition: ease 0.5s;
       }
     }
 
-    // .skills_cart:hover {
-    //   .skills_cart_text {
-    //     color: #464646;
-    //   }
-    // }
+    .skills_cart:hover {
+      background: #89858f;
+      .skills_cart_text {
+        color: #464646;
+      }
+
+      .skills_cart_text:active { 
+        color: #757575;
+      }
+    }
   }
 }
