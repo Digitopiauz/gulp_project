@@ -8,9 +8,12 @@
     min-height: 100px;
 
     .footer_logo {
-      transition: ease 0.3s;
+      transition: filter 0.3s ease;
     }
     .footer_logo:hover {
+      filter: brightness(80%) sepia(10%) hue-rotate(250deg) saturate(150%)
+        contrast(120%) invert(80%);
+
       cursor: pointer;
       transform: translateY(-10px);
     }
