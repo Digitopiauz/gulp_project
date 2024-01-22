@@ -14,7 +14,6 @@
       .hero_title {
         padding-top: 239px;
         text-align: center;
-
         color: #925ff0;
         font-family: "Anton", sans-serif;
         font-size: 200px;
@@ -22,6 +21,9 @@
         font-weight: 400;
         line-height: 200px;
         opacity: 0.8;
+      }
+      .hero_title::after {
+        content: "";
       }
       .arrow {
         padding: 170px 0 0 0;
